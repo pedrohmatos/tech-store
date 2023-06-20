@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color01: #5731E6;
+    --color02: #D171E5;
+
+    --bground01: #f8f8f8;
+    --bground02: #E2C6E4;
+
+    --fontFamily: 'Kanit', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--bground02);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7rem auto;
+    width: 80rem;
+}
+
+#left {
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: var(--bground01);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#title {
+    font-family: var(--fontFamily);
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--color01);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.253);
+}
+
+#text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input {
+    border: none;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    width: 90%;
+    border-radius: 7px;
+    outline: none;
+}
+input:hover {
+    box-shadow: 1px 1px 10px var(--color01);
+}
+
+a > button {
+    background-color: var(--color01);
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--bground01);
+}
+
+a > button:hover {
+    background-color:#633cf3;
+    transform: scale(1.02);
+}
+
+#right {
+    padding: 0rem 0.9rem;
+}

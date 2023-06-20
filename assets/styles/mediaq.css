@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1300px) {
+    #right img{
+        width: 40rem;
+    }
+
+    #container {
+        width: 70rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #right img {
+        width: 25rem;
+    }
+
+    #container {
+        width: 55rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #right img {
+        display: none;
+    }
+
+    #container {
+        width: 90%;
+    }
+}
